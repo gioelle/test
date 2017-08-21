@@ -1,0 +1,13 @@
+package CCApp;
+
+import CCApp.Wallet;
+import CCApp.Card;
+
+public class CCInt {
+	public static void main(String[] args) {
+		private Card visa = new Card(100, "V")
+		
+	}
+
+	public void makeNewPerson() {}
+}

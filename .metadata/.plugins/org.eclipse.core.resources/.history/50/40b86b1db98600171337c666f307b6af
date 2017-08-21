@@ -1,0 +1,25 @@
+import java.util.ArrayList;
+
+public class Wallet {
+	private ArrayList<Card> cardsInWallet = new ArrayList<Card>();
+	private double walletInterest;
+	
+	
+	public double getWalletInterest() {
+		return walletInterest;
+	}
+
+	public void setWalletInterest(double walletInterest) {
+		this.walletInterest = walletInterest;
+	}
+
+	public ArrayList<Card> getCardsInWallet() {
+		return cardsInWallet;
+	}
+
+	public void setCardsInWallet(ArrayList<Card> cardsInWallet) {
+		this.cardsInWallet = cardsInWallet;
+	}
+	
+	
+}

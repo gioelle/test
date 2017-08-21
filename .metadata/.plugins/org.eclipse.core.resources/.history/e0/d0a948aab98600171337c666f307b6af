@@ -1,0 +1,24 @@
+import java.util.ArrayList;
+
+public class Person {
+	private ArrayList<Wallet> wallets = new ArrayList<Wallet>();
+	private double totalIntOwed;
+	
+	public double calcTotalIntOwed(ArrayList<Wallet> wallets) {
+		
+	}
+	
+	
+	public ArrayList<Wallet> getWallets() {
+		return wallets;
+	}
+	public void setWallets(ArrayList<Wallet> wallets) {
+		this.wallets = wallets;
+	}
+	public double getTotalIntOwed() {
+		return totalIntOwed;
+	}
+	public void setTotalIntOwed(double totalIntOwed) {
+		this.totalIntOwed = totalIntOwed;
+	}
+}

@@ -1,0 +1,11 @@
+
+public class CCInt {
+	
+	public static void main(String[] args) {
+		Person test1 = new Person();
+		test1.setWallets(Wallet wallet);
+		
+	}
+
+
+}

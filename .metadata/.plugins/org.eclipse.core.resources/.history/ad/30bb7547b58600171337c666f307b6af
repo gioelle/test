@@ -1,0 +1,4 @@
+
+public class Disc extends creditCard{
+	private double interestRate = 0.01;
+}

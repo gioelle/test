@@ -1,0 +1,5 @@
+
+public class MC extends creditCard{
+	private double interestRate = 0.05;
+	
+}

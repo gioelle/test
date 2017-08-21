@@ -1,0 +1,53 @@
+
+public class Card {
+private double balance;
+private double interestRate;
+private double totalInterest;
+private String type;
+
+
+public Card(double balance, double totalInterest, String type) {
+	switch (type) {
+	case "V": this.interestRate = 0.10;
+	break;
+	case "M": this.interestRate = 0.05;
+	break;
+	case "D": this.interestRate = 0.01;
+	break;
+	}
+	
+	super();
+	this.balance = balance;
+	this.totalInterest = totalInterest;
+	this.type = type;
+}
+
+public double calculateInterest(double balance, double interestRate) {
+	return balance*interestRate;
+}
+
+public double getBalance() {
+	return balance;
+}
+
+public void setBalance(double balance) {
+	this.balance = balance;
+}
+
+public double getInterestRate() {
+	return interestRate;
+}
+
+public void setInterestRate(double interestRate) {
+	this.interestRate = interestRate;
+}
+
+public double getTotalInterest() {
+	return totalInterest;
+}
+
+public void setTotalInterest(double totalInterest) {
+	this.totalInterest = totalInterest;
+}
+
+}

@@ -1,0 +1,27 @@
+package CCApp;
+
+import CCApp.Wallet;
+import CCApp.Card;
+
+public class CCInt {
+	public static void main(String[] args) {
+		Card visaCard = new Card(100, "V");
+		Card masterCard = new Card(100, "M");
+		Card discoverCard = new Card(100,"D");
+		Wallet walletOne = new Wallet(visaCard, masterCard, discoverCard);
+		Person testPerson = new Person(walletOne);
+		testPerson.calcTotalIntOwed(testPerson.getWallets());
+		walletOne.calcWalletInterest();
+		
+		Card secondVisa = new Card(100, "V");
+		Card secondDisc = new Card(100,"D");
+		Wallet secondWallet = new Wallet(secondVisa,secondDisc);
+		Card secondMc= new Card(100, "M");
+		Wallet thirdWallet = new Wallet(secondMc);
+		Person secondTest = new Person(secondWallet, thirdWallet);
+		secondTest.calcTotalIntOwed(secondTest.getWallets());
+		thirdWallet.calcWalletInterest();
+		secondWallet.calcWalletInterest();
+	}
+
+}

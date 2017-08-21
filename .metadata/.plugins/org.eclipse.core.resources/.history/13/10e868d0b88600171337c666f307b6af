@@ -1,0 +1,15 @@
+import java.util.ArrayList;
+
+public class Wallet {
+	private ArrayList<Card> cardsInWallet = new ArrayList<Card>();
+
+	public ArrayList<Card> getCards() {
+		return cardsInWallet;
+	}
+
+	public void setCards(ArrayList<Card> cardsInWallet) {
+		this.cardsInWallet = cardsInWallet;
+	}
+	
+	
+}

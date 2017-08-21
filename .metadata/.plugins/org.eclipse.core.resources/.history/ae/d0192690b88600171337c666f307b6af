@@ -1,0 +1,14 @@
+
+public class CCInt {
+	private double visaInt = 0.10;
+	private double mcInt = 0.05;
+	private double dInt = 0.01;
+	
+	public static void main(String[] args) {
+		
+	}
+
+	public double calcInterest(double balance, double intRate) {
+		return balance*intRate;
+	}
+}
